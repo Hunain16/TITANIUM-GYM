@@ -1,0 +1,976 @@
+
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+     
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TITANIUM-Gym | Home </title>				
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
+
+
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+  
+  border: 0;
+  padding: 20px;
+  height: 40px;
+  width: 100%;
+
+  }
+.animenu__toggle:hover {
+  background-color: #004574;
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+
+  transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+  margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+  margin: 0;
+  position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animenu {
+  display: block;
+
+}
+.animenu ul {
+  padding: 0;
+  list-style: none;
+  font: 0px 'Open Sans', Arial, Helvetica;
+  margin-left:300px;
+  margin-top:2px;
+  }
+.animenu li, .animenu a {
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.animenu a {
+  color: #009fa5;
+  text-decoration: none;
+}
+
+
+.animenu__nav > li {
+  position: relative;
+  border-right: 1px solid ;
+}
+.animenu__nav > li > a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.animenu__nav > li > a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: currentColor;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: -5px;
+  right: 10px;
+}
+.animenu__nav > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+.animenu__nav > li:hover > a {
+  color: #ffffff;
+}
+
+.animenu__nav__child {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 0 0 0;
+  background-color: #373737;
+  transition: margin .15s, opacity .15s;
+}
+.animenu__nav__child > li {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+}
+.animenu__nav__child > li:first-child > a:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: inherit;
+}
+.animenu__nav__child > li:last-child {
+  border: 0;
+}
+.animenu__nav__child a {
+  padding: 10px;
+  width: 100%;
+  border-color: #373737;
+}
+.animenu__nav__child a:hover {
+  background-color: #0186ba;
+  border-color: #0186ba;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  .animenu__nav {
+    margin: 20px 0;
+  }
+  .animenu__nav > li {
+
+    border-right: 0;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav > li:last-child {
+    border: 0;
+  }
+  .animenu__nav > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav > li > a {
+    width: 100%;
+    padding: 10px;
+    border-color: #111;
+    position: relative;
+  }
+  .animenu__nav a:hover {
+    background-color: #ff1e00;
+    border-color: #0186ba;
+    color: #fff;
+  }
+
+  .animenu__nav__child {
+    position: static;
+    background-color: #080000;
+    margin: 0;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: none;
+  }
+  .animenu__nav__child a {
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+.animenu__nav--open {
+  display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+  display: block;
+}
+.log1{
+color:black;
+}
+.parallax1b1{
+	background-image:url("./images/66.webp");
+
+        background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	height:350px;
+	width:100%;
+
+	}
+	.body {
+    background-image:url("/images/main.jpg");
+   text-align: center;
+
+    height:auto; 
+	width:100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 15%;
+}
+.ab1{
+	height:300px;
+	width:290px;
+    border:dashed 1px rgb(2, 172, 252);
+	border-radius:5px;
+	background: rgb(255, 255, 255);
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+	/* footer */
+  #social {
+    background-image: url("./images/.jpeg");
+    padding: 0;
+}
+
+#social .overlay {
+    background: url("./images/g55.jpeg") repeat scroll 0 0 transparent;
+    padding: 30px 0 120px;
+}
+
+.social-button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-button li {
+    display: inline-block;
+}
+
+.social-button li:nth-child(2) {
+    margin: 0 55px;
+}
+
+.social-button li a {
+    border: 2px solid #feffff;
+    border-radius: 50%;
+    color: #f8fcfd;
+    display: block;
+    height: 90px;
+    line-height: 96px;
+    width: 90px;
+    
+    -webkit-transition: all 0.2s ease 0s;
+       -moz-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+         -o-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+
+.social-button li a:hover {
+    color: #00b3ff;
+    border: 2px solid #0088b9;
+}
+
+/* footer end */
+ /* marquee  */
+
+ .page1 {
+  width: 100%;
+  height: 100vh;
+  --space: 2rem;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  width: 100%;
+  height: 100vh;
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.marquee .marquee--borders p{
+  color: white;
+}
+.marquee {
+  --duration: 40s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(35rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(75deg,
+      hsl(189, 99%, 26%) 0%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 50%) 100%);
+
+  -webkit-text-fill-color: white;
+  border-radius: 2px;
+  font-size: 4rem;
+}
+
+.marquee--borders {
+  border-block: 3px solid rgb(215, 220, 224);
+  padding-block: 2rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+/* 1 aniamtion end */
+
+
+.main {
+  height: 100%;
+  position: relative;
+}
+
+h1 {
+  font-family: 'roboto', serif;
+  font-size: 60px;
+  line-height: 1.125;
+  margin-bottom: 10px;
+  letter-spacing: -3px;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+h3 {
+  color: rgb(255, 255, 255);
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.85;
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  
+ 
+}
+
+@media (min-width: 800px) {
+  h3 {
+    font-size: 23px;
+  }
+}
+p {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: georgia, times, serif;
+  font-weight: normal;
+}
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  list-style: none;
+  z-index: 997;
+  margin-top: 10%;
+}
+
+@media (min-width: 500px) and (min-height: 375px) {
+  .nav {
+    display: block;
+  }
+}
+.nav:before {
+  border-left: 2px solid rgba(0, 248, 248, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 49px;
+}
+
+.dot-nav {
+  list-style: none;
+  position: relative;
+  z-index: 5;
+}
+
+.dot-nav a {
+  display: inline-block;
+  background: #ddd;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.dot-nav a:hover {
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-color: #00e6da;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.dot-nav a.active {
+  background-color: #10a8b3;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.dot-nav li {
+  margin: 25px 0;
+}
+
+.dot-nav li span {
+  opacity: 0;
+  position: fixed;
+  vertical-align: middle;
+  color: #fff;
+  background: #000;
+  padding: 2px 7px;
+  margin-top: -4px;
+  margin-left: 25px;
+  border-radius: 4px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.dot-nav li span b {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.dot-nav li a:hover + span {
+  opacity: 1;
+}
+
+.page-block {
+  background-size: cover;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3em 0;
+  color: #fff;
+}
+
+/* #one {
+  background: url(/images/gym23.jpeg) no-repeat center center fixed;
+}
+
+#two {
+  background: url(/images/2.jpg) no-repeat center center fixed;
+}
+
+#three {
+  background: url(https://unsplash.it/1800/900?image=96) no-repeat center center fixed;
+}
+
+#four {
+  background: url(https://unsplash.it/1800/900?image=36) no-repeat center center fixed;
+}
+
+#five {
+  background: url(https://unsplash.it/1800/900?image=255) no-repeat center center fixed;
+}
+
+#six {
+  background: url(https://unsplash.it/1800/900?image=319) no-repeat center center fixed;
+}
+
+#seven {
+  background: url(https://unsplash.it/1800/900?image=668) no-repeat center center fixed;
+}
+
+#eight {
+  background: url(https://unsplash.it/1800/900?image=625) no-repeat center center fixed;
+} */
+
+</style>
+
+
+    </head>
+	
+    <body class="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					
+						<div class=" wow animated bounceInRight"><img src="images/LOOGO.PNG" class="img-responsive" style="height:59px; width:250px;  "></div>
+                    
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li class="">
+      <a href="index.html" style="font-size: 18px;">Home</a>
+    </li>
+	<li>
+      <a href="trainer.html">Trainer</a>
+    </li>
+    <li>
+      <a href="#service">Service</a>
+      <ul class="animenu__nav__child">
+        <li><a href="Aerobics.html">Aerobics</a></li>
+        <li><a href="zumba.html">Zumba</a></li>
+        <li><a href="Kung fu.html">Kung-fu</a></li>
+        <li><a href="yoga.html">yoga</a></li>
+        <li><a href="boxing.html">Boxing</a></li>
+        <li><a href="Martial Arts .html">Martial-arts</a></li>
+        <li><a href="Weightlifting.html">Weightlifting</a></li>
+        <li><a href="Indoor cycling.html">Indoor cycling</a></li>
+        <li><a href="kettbellpower.html">Kettbell power</a></li>
+        
+      
+	  </ul>
+    </li>     
+    <li>
+      <a href="about.html">About</a>
+    </li>
+   
+   
+    <li>
+      <a href="gellery.html">GELLERY</a>
+    </li>
+    <li>
+      <a href="pricing.html">pricing</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>     
+    <li>
+      <a href="login.html">LOGIN</a>
+    </li>               
+  </ul>
+</nav>
+  
+    <!-- /main nav -->
+				
+            </div>
+        </header>
+        <section id="portfolio">
+          <div class="container">
+            <div class="row">
+            
+              <div class="sec-title text-center wow animated fadeInDown margin-top ">
+                <h2>About</h2>
+                
+              </div>
+              
+    
+              
+                
+              
+        </section>
+
+        <div class="nav">
+          <ul class="dot-nav">
+            <li>
+              <a href="#one" class="active" scroll-data="one"></a>
+              <span><b>Section One</b>
+              Test Heading here</span>
+            </li>
+            <li>
+              <a href="#two" scroll-data="two"></a>
+              <span><b>Title</b>
+              Subtitle</span>
+            </li>
+            <li>
+              <a href="#three" scroll-data="three"></a>
+              <span><b>Title2</b>
+              Subtitle2</span>
+            </li>
+              <li>
+              <a href="#four" scroll-data="four"></a>
+              <span><b>Title3</b>
+              Subtitle3</span>
+            </li>
+            <li>
+              <a href="#five" scroll-data="five"></a>
+              <span><b>Title4</b>
+              Subtitle4</span>
+            </li>
+            <li>
+              <a href="#six" scroll-data="six"></a>
+              <span><b>Title5</b>
+              Subtitle5</span>
+            </li>
+            <li>
+              <a href="#seven" scroll-data="seven"></a>
+              <span><b>Title6</b>
+           Subtitle6</span>
+            </li>
+            <li>
+              <a href="#eight" scroll-data="eight"></a>
+              <span><b>Title7</b>
+              Subtitle7</span>
+            </li>
+          </ul>
+        </div>
+            
+        <div class="main">
+          <section id="one" data-anchor="one" class="page-block">
+            <div class="content">
+              <h1>Mission Statement from its values</h1>
+           
+              <div class="jquery-script-ads"><script type="text/javascript"><!--
+        google_ad_client = "ca-pub-2783044520727903";
+        /* jQuery_demo */
+        google_ad_slot = "2780937993";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script></div>
+              <p class="wow animated fadeInDown ">"Our Company's foundation is built on our Values, which distinguish us and guide our actions. We conduct our business in a socially responsible and ethical manner. We respect the law, protect the environment, and benefit the communities where we work." Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="two" data-anchor="two" class="page-block">
+            <div class="content">
+              <h1 > WELCOME TITANIUM-GYM</h1>
+             
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="three" data-anchor="three" class="page-block">
+            <div class="content">
+              <h1>WHY TITANIUM</h1>
+              <p class="wow animated fadeInDown">Contrary to the popular image, <b>Trim</b> is not designed for the upper bourgeois or the elite class. Our mantra is “fitness for all” and we make sure that we welcome anyone who want to achieve their fitness goal and remain healthy.
+    
+                We believe exercising should not be cumbersome. It should be something every one of us ought to look forward to. To spice up the daily dreary fitness regime. <b>Trim</b> is specifically designed to keep up with the modern needs of its customers.
+                
+                Because of the reason, we are the only health club in Pakistan to develop and establish an in-house Instructor certification program that helps in training fitness instructors through a variety of subject such as CPR, Human Anatomy, Physiology, Kinesiology, Functional training and Fitness testing to name a few.
+                
+                The end result: a league of extraordinarily personalized instructors who help others with their lifelong dream of attaining fitness and health across the country.
+                
+                Still confused about whether <b>Trim</b> and You are the right fit? Don’t be. Take the simple initiative of visiting any <b>Trim</b> Club near you and get in touch with one of our personal to talk about your needs. We will help you chalk up a personalized program to help you shed those extra pounds. Put healthy back in your eating habits and most of all – groom your mindset to make you a positive person.
+                
+                Our doors are open for anyone who wants to change their lifestyle. Get in shape with <b>Trim</b> today.</p><br/>            </div>
+          </section>
+          <section id="four" data-anchor="four" class="page-block">
+            <div class="content">
+              <h1>STORY </h1>
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="five" data-anchor="five" data-anchor="one" class="page-block">
+            <div class="content">
+              <h1>GYM BANEFITS</h1>
+             
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="six" data-anchor="six" class="page-block">
+            <div class="content">
+              <h1>OUR PHILOSOPHY</h1>
+            
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="seven" data-anchor="sevent" class="page-block">
+            <div class="content">
+              <h1> Exercise</h1>
+             
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+          <section id="eight" data-anchor="eight" class="page-block">
+            <div class="content">
+              <h1> PARTNERS</h1>
+            
+              <p class="wow animated fadeInDown ">In aliquam nulla tellus, vel dictum velit eleifend sit amet. Vivamus sed varius orci. Cras eget massa ullamcorper, sollicitudin orci et, lacinia velit. Sed nisi leo, vulputate et commodo quis, vehicula non urna. Duis erat metus, suscipit a blandit eu, ultrices sit amet risus. Phasellus feugiat erat odio, semper congue nibh vehicula ac. Cras tincidunt enim vel lorem euismod, a facilisis turpis ornare. Nulla pharetra, risus posuere pulvinar tempus, ipsum lectus elementum nunc, vel bibendum tellus justo eu ipsum. Praesent diam erat, ultrices ac turpis eu, pulvinar consequat tellus.</p>
+        <p class="wow animated fadeInDown ">Integer lorem lectus, scelerisque at molestie id, sollicitudin nec nisi. Aenean consectetur maximus risus, sed faucibus tellus condimentum sed. Etiam non pharetra sapien. Nullam in mi consequat justo facilisis semper at sed erat. Curabitur elit metus, gravida eu nulla nec, imperdiet fermentum sapien. Quisque tincidunt pharetra consectetur. Suspendisse tincidunt dictum purus, in iaculis dui maximus eu. Vestibulum nibh eros, venenatis sit amet commodo ac, accumsan nec lorem. Donec rutrum ex convallis, lacinia felis auctor, pulvinar nisl.</p>
+            </div>
+          </section>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+        $('.dot-nav a').on('click', function() {
+        
+            var scrollAnchor = $(this).attr('data-scroll'),
+                scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
+        
+            $('.main').animate({
+                scrollTop: scrollPoint
+            }, 500);
+        
+            return false;
+        
+        })
+        
+        
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+            if (windscroll >= 100) {
+                $('.dot-nav').addClass('fixed');
+                $('.main section').each(function(i) {
+                    if ($(this).position().top <= windscroll) {
+                        $('.dot-nav a.active').removeClass('active');
+                        $('.dot-nav a').eq(i).addClass('active');
+                    }
+                });
+        
+            } else {
+        
+                $('dot-nav').removeClass('fixed');
+                $('dot-nav a.active').removeClass('active');
+                $('dot-nav a:first').addClass('active');
+            }
+        
+        }).scroll();
+        </script>
+        
+        <script type="text/javascript">
+        
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- end Service section -->
+  <br><br><br><br><br>      
+
+
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+						
+						<ul class="social-button">
+              <li class="wow animated zoomIn"><a href="https://www.facebook.com/"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com/login"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+						</ul>
+						<div class="text-center">
+						<br/>
+						<br/>
+												<p> &copy; Design and Developed By human <a href="#"> </a> </p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+		
+		
+		</main>
+		
+		
+
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

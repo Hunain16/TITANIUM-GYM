@@ -1,0 +1,1918 @@
+
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+     
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TITANIUM-Gym | Home </title>				
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script>
+          var popUp = $('.popup-video');
+    if(popUp.length){
+      popUp.magnificPopup({
+        type: 'iframe'
+      });
+    }
+        </script>
+		<style>
+
+
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+ 
+  border: 0;
+  padding: 20px;
+  height: 4%;
+  width: 100%;
+
+  }
+.animenu__toggle:hover {
+  background-color: #004574;
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+
+  transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+  margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+  margin: 0;
+  position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animenu {
+  display: block;
+
+}
+.animenu ul {
+  padding: 0;
+  list-style: none;
+  font: 0px 'Open Sans', Arial, Helvetica;
+  margin-left:250px;
+  margin-top:2px;
+  }
+.animenu li, .animenu a {
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.animenu a {
+  color: #009fa5;
+  text-decoration: none;
+}
+
+
+.animenu__nav > li {
+  position: relative;
+  border-right: 1px solid ;
+}
+.animenu__nav > li > a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.animenu__nav > li > a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: currentColor;
+  top: 50%;
+  margin-top: -2px;
+  margin-left: -5px;
+  right: 10px;
+}
+.animenu__nav > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+.animenu__nav > li:hover > a {
+  color: #ffffff;
+}
+
+.animenu__nav__child {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 0 0 0;
+  background-color: #373737;
+  transition: margin .15s, opacity .15s;
+}
+.animenu__nav__child > li {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+}
+.animenu__nav__child > li:first-child > a:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: inherit;
+}
+.animenu__nav__child > li:last-child {
+  border: 0;
+}
+.animenu__nav__child a {
+  padding: 10px;
+  width: 100%;
+  border-color: #373737;
+}
+.animenu__nav__child a:hover {
+  background-color: #0186ba;
+  border-color: #0186ba;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  .animenu__nav {
+    margin: 20px 0;
+  }
+  .animenu__nav > li {
+
+    border-right: 0;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav > li:last-child {
+    border: 0;
+  }
+  .animenu__nav > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav > li > a {
+    width: 100%;
+    padding: 10px;
+    border-color: #111;
+    position: relative;
+  }
+  .animenu__nav a:hover {
+    background-color: #000000;
+    border-color: #0186ba;
+    color: #fff;
+  }
+
+  .animenu__nav__child {
+    position: static;
+    background-color: #080000;
+    margin: 0;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: none;
+  }
+  .animenu__nav__child a {
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+.animenu__nav--open {
+  display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+  display: block;
+}
+.log1{
+color:black;
+}
+.parallax1b1{
+	background-image:url("./images/66.webp");
+
+        background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	height:350px;
+	width:100%;
+
+	}
+	.body {
+    background-image:url("/images/main.jpg");
+
+    height:auto; 
+	width:100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	line-height: 24px;
+    font-size: 16px;
+    color: #00ccff;
+}
+.ab1{
+	height:300px;
+	width:290px;
+    border:dashed 1px rgb(2, 172, 252);
+	border-radius:5px;
+	background: rgb(255, 255, 255);
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    50%  {background: yellow; left: 200px; top: 0px;}
+    100%  {background: blue; left: 200px; top: 200px;}
+    50%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+}
+	/* footer */
+  #social {
+    background-image: url("./images/.jpeg");
+    padding: 0;
+}
+
+#social .overlay {
+    background: url("./images/g55.jpeg") repeat scroll 0 0 transparent;
+    padding: 30px 0 120px;
+}
+
+.social-button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-button li {
+    display: inline-block;
+}
+
+.social-button li:nth-child(2) {
+    margin: 0 55px;
+}
+
+.social-button li a {
+    border: 2px solid #feffff;
+    border-radius: 50%;
+    color: #f8fcfd;
+    display: block;
+    height: 90px;
+    line-height: 96px;
+    width: 90px;
+    
+    -webkit-transition: all 0.2s ease 0s;
+       -moz-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+         -o-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+
+.social-button li a:hover {
+    color: #00b3ff;
+    border: 2px solid #0088b9;
+}
+
+/* footer end */
+ /* marquee  */
+
+ .page1 {
+  width: 100%;
+  height: 100vh;
+  --space: 2rem;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  width: 100%;
+  height: 100vh;
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.marquee .marquee--borders p{
+  color: white;
+}
+.marquee {
+  --duration: 40s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(35rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(75deg,
+      hsl(189, 99%, 26%) 0%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 48%) 78%,
+      hsl(0, 0%, 0%) 89%,
+      hsl(187, 100%, 50%) 100%);
+
+  -webkit-text-fill-color: white;
+  border-radius: 2px;
+  font-size: 4rem;
+}
+
+.marquee--borders {
+  border-block: 3px solid rgb(215, 220, 224);
+  padding-block: 2rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+/* 1 aniamtion end */
+.features_area  {
+background-color: #000000;
+  padding-bottom: 10px;
+  padding-top: 70px;
+}
+
+@media (max-width: 767px) {
+  /* line 1, ../../Arafath/CL/Cl November/227. Health _ Fitness/HTML/scss/_features.scss */
+  .features_area {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1, ../../Arafath/CL/Cl November/227. Health _ Fitness/HTML/scss/_features.scss */
+  .features_area {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+
+/* line 13, ../../Arafath/CL/Cl November/227. Health _ Fitness/HTML/scss/_features.scss */
+.features_area .single_feature {
+  margin-bottom: 30px;
+}
+
+/* line 18, ../../Arafath/CL/Cl November/227. Health _ Fitness/HTML/scss/_features.scss */
+.features_area .single_feature h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 35px;
+  margin-bottom: 11px;
+}
+
+/* line 26, ../../Arafath/CL/Cl November/227. Health _ Fitness/HTML/scss/_features.scss */
+.features_area .single_feature p {
+  color: #AAB1B7;
+}
+
+
+.classtime-section {
+	
+	padding-top: 90px;
+}
+
+.classtime-section .section-title {
+	margin-bottom: 48px;
+}
+
+.timetable-controls {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.timetable-controls ul li {
+  
+	list-style: none;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: inline-block;
+	margin-right: 80px;
+	cursor: pointer;
+	position: relative;
+}
+
+.timetable-controls ul li.active {
+	color: #00aeff;
+  
+}
+
+.timetable-controls ul li.active:after {
+	opacity: 1;
+}
+
+.timetable-controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	width: 100%;
+	height: 2px;
+
+	content: "";
+	opacity: 0;
+}
+
+.timetable-controls ul li:last-child {
+	margin-right: 0;
+}
+
+.classtime-table .ts-item {
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.classtime-table.filtering .ts-item {
+	opacity: 0;
+}
+
+.classtime-table.filtering .ts-item.show {
+	opacity: 1;
+}
+
+.classtime-table table {
+	width: 100%;
+	border: 2px solid #15caf7;
+	background: #000000;
+	text-align: center;
+}
+
+.classtime-table table thead tr th {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: "Oswald", sans-serif;
+	padding: 25px 5px;
+}
+
+.classtime-table table tbody {
+	border-top: 1px solid #171717;
+}
+
+.classtime-table table tbody tr td {
+	text-align: center;
+	border-right: 1px solid #07848d;
+	border-bottom: 1px solid #0ca7d6;
+	width: 146px;
+	padding: 26px 10px 28px;
+	position: relative;
+	z-index: 1;
+}
+
+.classtime-table table tbody tr td:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, right top, from(#e16521), to(#e4381C));
+	background: -o-linear-gradient(left, #00a5f1, #00357a);
+	background: linear-gradient(to right, #00a5f1, #00357a);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.classtime-table table tbody tr td.hover-bg:hover:after {
+	opacity: 1;
+}
+
+.classtime-table table tbody tr td.hover-bg:hover h6 {
+	color: #ffffff;
+}
+
+.classtime-table table tbody tr td.workout-time {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Oswald", sans-serif;
+}
+
+.classtime-table table tbody tr td span {
+	font-size: 16px;
+	color: #ffffff;
+	display: block;
+	margin-bottom: 7px;
+}
+
+.classtime-table table tbody tr td h6 {
+	color: #1cbce4;
+	font-weight: 500;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+-----------------------*/
+
+.about-pic {
+	position: relative;
+}
+.about-pic img {
+	min-width: 100%;
+}
+.about-pic .play-btn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-41.5px, -41.5px);
+	-ms-transform: translate(-41.5px, -41.5px);
+	transform: translate(-41.5px, -41.5px);
+}
+.about-text {
+	padding-top: 15px;
+	padding-left: 40px;
+}
+.about-text h2 {
+	font-size: 40px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.about-text p {
+	color: #ffffff;
+}
+.about-text p.first-para {
+	margin-bottom: 10px;
+}
+.about-text p.second-para {
+	margin-bottom: 50px;
+}
+.about-text img {
+	margin-bottom: 25px;
+}
+.about-text .at-author h4 {
+	font-size: 22px;
+	color: #111111;
+	font-weight: 600;
+}
+.about-text .at-author span {
+	font-size: 12px;
+	color: #f15d44;
+}
+.about-section.about-page .about-text {
+	padding-top: 8px;
+}
+.about-section.about-page .about-text h2 {
+	margin-bottom: 20px;
+}
+.about-section.about-page .about-text .second-para {
+	margin-bottom: 28px;
+}
+
+
+/*---------------------
+  Classes Section
+-----------------------*/
+
+.classes-section {
+	background: #000000;
+	padding-bottom: 80px;
+  text-align: center;
+}
+
+.classes-section .section-title {
+	margin-bottom: 35px;
+}
+
+.class-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.class-item .ci-pic img {
+	min-width: 100%;
+}
+
+.class-item .ci-text {
+	background: #0a0a0a;
+	position: relative;
+	padding: 10px 30px 26px 30px;
+	z-index: 1;
+}
+
+.class-item .ci-text:after {
+	position: absolute;
+	left: -5px;
+	top: -44px;
+	height: 100px;
+	width: 600px;
+	border-top: 4px solid #464646;
+	background: #0a0a0a;
+	content: "";
+	-webkit-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	z-index: -1;
+}
+
+.class-item .ci-text span {
+	color: #00c2f3;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.class-item .ci-text h5 {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text h4 {
+	font-size: 26px;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.class-item .ci-text a {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background: rgba(255, 255, 255, 0.1);
+	line-height: 46px;
+	text-align: center;
+	font-size: 24px;
+	color: #ffffff;
+	position: absolute;
+	right: 30px;
+	bottom: 26px;
+}
+
+/*---------------------
+  Banner Section
+-----------------------*/
+
+.banner-section {
+	height: 550px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.bs-text.service-banner .bt-tips {
+	margin-bottom: 35px;
+}
+
+.bs-text h2 {
+	font-size: 48px;
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.bs-text .bt-tips {
+	font-size: 20px;
+	color: #c4c4c4;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+
+.bs-text .primary-btn {
+	background: transparent;
+	border: 2px solid #0bafbb;
+}
+
+.bs-text .play-btn {
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	background: #07adb3;
+	border-radius: 50%;
+	line-height: 70px;
+	text-align: center;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+/*---------------------
+  Pricing Section
+-----------------------*/
+
+.pricing-section {
+text-align: center;
+}
+
+.pricing-section .section-title {
+	margin-bottom: 56px;
+}
+
+.ps-item {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #0bd3c9;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.ps-item:hover {
+	background: #00646b;
+	border-color: #ffffff;
+}
+
+.ps-item:hover h3 {
+	color: #111111;
+}
+
+.ps-item:hover .pi-price span {
+	color: #444444;
+}
+
+.ps-item:hover ul li {
+	color: #111111;
+	font-weight: 600;
+}
+
+.ps-item:hover .primary-btn.pricing-btn {
+	background: #000000;
+}
+
+.ps-item:hover .thumb-icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ps-item h3 {
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 16px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price {
+	margin-bottom: 30px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price h2 {
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.ps-item .pi-price span {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.ps-item ul {
+	margin-bottom: 40px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item ul li {
+	font-size: 14px;
+	color: #c4c4c4;
+	line-height: 32px;
+	list-style: none;
+}
+
+.ps-item .primary-btn.pricing-btn {
+	display: block;
+  color: #00a5f1;
+	background: #000000;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.ps-item .thumb-icon {
+	font-size: 48px;
+	color: #ffffff;
+	position: absolute;
+	left: 50px;
+	bottom: 120px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: sk
+  
+  
+  
+  
+  
+  
+  4ewY(4deg);
+	transform: skewY(4deg);
+	opacity: 0;
+	visibility: hidden;
+}
+
+</style>
+
+
+    </head>
+	
+    <body class="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					
+						<div class=" wow animated bounceInRight"><img src="images/LOOGO-removebg-preview.png" class="img-responsive" style="height:59px; width:250px; .  "></div>
+                    
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li class="">
+      <a href="index.html" style="font-size: 18px;">Home</a>
+    </li>
+	<li>
+      <a href="trainer.html">Trainer</a>
+    </li>
+    <li>
+      <a href="#service">Service</a>
+      <ul class="animenu__nav__child">
+        <li><a href="Aerobics.html">Aerobics</a></li>
+        <li><a href="zumba.html">Zumba</a></li>
+        <li><a href="Kung fu.html">Kung-fu</a></li>
+        <li><a href="yoga.html">yoga</a></li>
+        <li><a href="boxing.html">Boxing</a></li>
+        <li><a href="Martial Arts .html">Martial-arts</a></li>
+        <li><a href="Weightlifting.html">Weightlifting</a></li>
+        <li><a href="Indoor cycling.html">Indoor cycling</a></li>
+        <li><a href="kettbellpower.html">Kettbell power</a></li>
+        
+      
+	  </ul>
+    </li>     
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li>
+      <a href="pricing.html">pricing</a>
+    </li>
+    <li>
+      <a href="gellery.html">GELLERY</a>
+    </li>
+
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>     
+    <li>
+      <a href="login.html">LOGIN</a>
+    </li>             
+  </ul>
+</nav>
+  
+    <!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper carousel slide" data-ride="carousel">
+				<div class="sl-slider ">
+				
+					<div class="sl-slide" data-orientation="horizontal"  data-slice1-rotation="1" data-slice2-rotation="1" data-slice1-scale="2" data-slice2-scale="2">
+					
+						<div class="bg-img bg-img-1 wow animated bounceInRight" ></div>
+
+                        
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					
+						<div class="bg-img bg-img-2"></div>
+					
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal"  data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						
+						<div class="bg-img bg-img-3"></div>
+                        
+
+					</div>
+		
+				</div><!-- /sl-slider -->
+
+                <!-- 
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+                -->
+                
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class="sl-prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class="sl-next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+                
+
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+		</section>
+			
+		<!-- about-us -->
+		<section>
+
+				<div class="row ">
+				
+					
+					</div>
+					<div class="parallax1b1"> 
+					<div class="container">
+					<br>
+                    <br>
+                    <br>
+                    <br>
+					<h1 class="wow animated bounceInLeft">About-Us</h1>
+                    <div style="width:40%;">Our Company's foundation is built on our Values, which distinguish us and guide our actions. We conduct our business in a socially responsible and ethical manner. We respect the law, protect the environment, and benefit the communities where we work.</div>
+						
+					</div>
+					</div>
+				</section>	
+				<!-- end Service section -->
+	
+	
+		<!-- Service section -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2 class="wow animated bounceInLeft">Service</h2>
+						<p class="wow animated bounceInRight">The Key Features of Our</p>
+					</div>
+					
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="service-item">
+
+							<div class="service-icon">
+								<a href="aerobics.html"><i class="fa fa-home fa-3x"></i></a>
+							</div>
+							<h3>Aerobics</h3>
+							<p>Aerobics combines rhythmic aerobic exercise with stretching as well as strength training routines to improve all elements of fitness (flexibility, muscular strength, and cardio-vascular fitness). It is usually performed to music in a group setting led by an instructor. </p>
+
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="service-item">
+							<div class="service-icon">
+							<a href="zumba.html"><i class="fa fa-home fa-3x"></i></a>	
+							</div>
+							<h3>Zumba</h3>
+							<p>Zumba involves dance and aerobic movements performed to energetic music. The choreography incorporates hip-hop, soca, samba, salsa, merengue and mambo. Squats and lunges are also included.</p>
+			
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="service-item">
+							<div class="service-icon">
+								<a href="yoga.html"><i class="fa fa-home fa-3x"></i></a>
+							</div>
+							<h3>Yoga</h3>
+							<p>YogaFit is designed to improve the health, performance, and mental acuity of athletes or individuals interested in improving their level of fitness. Based on the ancient fitness science of hatha yoga, it blends balance, strength, flexibility and power in a fitness format. </p>
+					
+						</div>
+					</div>
+					
+					</div>
+					<br/>
+					<br/>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="service-item">
+							<div class="service-icon">
+								<a href="boxing.html"><i class="fa fa-home fa-3x"></i></a>
+							</div>
+							<h3>Boxing </h3>
+							<p>Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined set of time in a boxing ring. ... Boxing is supervised by a referee over a series of one- to three-minute intervals called rounds.</p>
+						
+						</div>
+					</div>
+				
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="service-item">
+							<div class="service-icon">
+								<a href="Martial Arts .html"><i class="fa fa-home fa-3x"></i></a>
+							</div>
+							<h3>Martial Arts </h3>
+							<p>Martial arts cover a broad range of activities that involve fighting techniques, physical exercises, and methods of mental discipline, among other skills. Martial arts originated in the ancient cultures of Asia, and are used today around the world for self-defense, exercise , health, spiritual growth, law enforcement, and athletic competition. </p>
+						
+						</div>
+					</div>
+				
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+						<div class="service-item">
+							<div class="service-icon">
+								<a href="Kung fu.html"><i class="fa fa-home fa-3x"></i></a>
+							</div>
+							
+							<h3>KungFu</h3>
+							<p>In its original meaning, kung fu can refer to any discipline or skill achieved through hard work and practice, not necessarily martial arts.</p>	
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- end Service section -->
+		<br><br><br>
+    
+
+
+
+    
+
+
+
+		<section id="portfolio">
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="sec-title text-center wow animated fadeInDown margin-top ">
+						<h2>Our classes</h2>
+						<p>WHAT WE CAN OFFER</p>
+					</div>
+					
+
+					
+						
+					
+
+
+
+
+
+    <section class="classes-section spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="section-title">
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6">
+                  <div class="class-item">
+                      <div class="ci-pic">
+                          <img src="images/itm 1.jpeg" alt="">
+                      </div>
+                      <div class="ci-text">
+                          <span>STRENGTH</span>
+                          <h5>Weightlifting</h5>
+                          <a href="Weightlifting.html"><i class="fa fa-angle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="class-item">
+                      <div class="ci-pic">
+                          <img src="images/itm2.jpeg" alt="">
+                      </div>
+                      <div class="ci-text">
+                          <span>Training</span>
+                          <h5>yoga</h5>
+                          <a href="yoga.html"><i class="fa fa-angle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="class-item">
+                      <div class="ci-pic">
+                          <img src="images/itm3.jpeg" alt="">
+                      </div>
+                      <div class="ci-text">
+                          <span>STRENGTH</span>
+                          <h5>Kettlebell power</h5>
+                          <a href="kettbellpower.html"><i class="fa fa-angle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                  <div class="class-item">
+                      <div class="ci-pic">
+                          <img src="images/itm5.jpeg" alt="">
+                      </div>
+                      <div class="ci-text">
+                          <span>Cardio</span>
+                          <h4>Indoor cycling</h4>
+                          <a href="Indoor cycling.html"><i class="fa fa-angle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="class-item">
+                      <div class="ci-pic">
+                          <img src="images/bbb.jfif" alt="">
+                      </div>
+                      <div class="ci-text">
+                          <span>Training</span>
+                          <h4>Boxing</h4>
+                          <a href="boxing.html"><i class="fa fa-angle-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</section>
+  <!-- ChoseUs Section End -->
+
+  <!-- Banner Section End -->
+
+  <!-- Pricing Section Begin -->
+  <section id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+      
+        <div class="sec-title text-center wow animated fadeInDown  ">
+          <h2>Our plan</h2>
+          <p>Chose your pricing</p>
+        </div>
+        
+
+        
+          
+        
+ 
+  <section class="pricing-section spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="section-title">
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-8">
+                  <div class="ps-item">
+                      <h3>Class drop-in</h3>
+                      <div class="pi-price">
+                          <h2>$ 39.0</h2>
+                          <span>SINGLE CLASS</span>
+                      </div>
+                      <ul>
+                          <li>Free riding</li>
+                          <li>Unlimited equipments</li>
+                          <li>Personal trainer</li>
+                          <li>Weight losing classes</li>
+                          <li>Month to mouth</li>
+                          <li>No time restriction</li>
+                      </ul>
+                      <a href="contact.html" class="primary-btn pricing-btn">Enroll now</a>
+                      <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-8">
+                  <div class="ps-item">
+                      <h3>12 Month unlimited</h3>
+                      <div class="pi-price">
+                          <h2>$ 99.0</h2>
+                          <span>SINGLE CLASS</span>
+                      </div>
+                      <ul>
+                          <li>Free riding</li>
+                          <li>Unlimited equipments</li>
+                          <li>Personal trainer</li>
+                          <li>Weight losing classes</li>
+                          <li>Month to mouth</li>
+                          <li>No time restriction</li>
+                      </ul>
+                      <a href="contact.html" class="primary-btn pricing-btn">Enroll now</a>
+                      <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-8">
+                  <div class="ps-item ">
+                      <h3>6 Month unlimited</h3>
+                      <div class="pi-price">
+                          <h2>$ 59.0</h2>
+                          <span>SINGLE CLASS</span>
+                      </div>
+                      <ul>
+                          <li>Free riding</li>
+                          <li>Unlimited equipments</li>
+                          <li>Personal trainer</li>
+                          <li>Weight losing classes</li>
+                          <li>Month to mouth</li>
+                          <li>No time restriction</li>
+                      </ul>
+                      <a href="contact.html" class="primary-btn pricing-btn">Enroll now</a>
+                      <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Pricing Section End -->
+</section>
+ 
+  </div>
+
+
+
+
+
+
+    
+
+		<!-- portfolio section -->
+		<section id="portfolio">
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="sec-title text-center wow animated fadeInDown margin-top ">
+						<h2>Interior</h2>
+						<p>Our Interior</p>
+					</div>
+					
+
+					
+						
+					
+
+    <div class="page1">
+
+      <div class="marquee">
+        <div class="marquee__group">
+           <img src='./images/g1.jpeg' alt=''>
+          <img src='./images/last.jpeg' alt=''>
+          <img src='./images/g4.jpeg' alt=''>
+          <img src='./images/g5.jpeg' alt=''>
+          <img src='./images/4.jpeg' alt=''>
+          <img src='./images/itm3.jpeg' alt=''>
+          <img src='./images/gym8.jpeg' alt=''>
+          <img src='./images/32.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+        </div>
+  
+        <div aria-hidden="true" class="marquee__group">
+          <img src='./images/BLOG.png' alt=''>
+          <img src='./images/pic5.jpg' alt=''>
+          <img src='./images/pic6.jpg' alt=''>
+          <img src='./images/pic8.jpg' alt=''>
+          <img src='./images/c8.jpg' alt=''>
+        </div>
+      </div>
+      <div class="marquee marquee--borders" style="--duration: 30s">
+        <div class="marquee__group">
+          <p>TITANIUM-Gym Interior</p>
+          <p>TITANIUM-Gym Interior</p>
+          <p>TITANIUM-Gym Interior</p>
+        
+        </div>
+  
+        <div class="marquee__group">
+         
+          <p>TITANIUM-Gym Interior</p>
+          
+          <p>TITANIUM-Gym Interior</p>
+          <p>TITANIUM-Gym Interior</p>
+        </div>
+      </div>
+  
+      <div class="marquee marquee--reverse">
+        <div class="marquee__group">
+          <img src='./images/gym8.jpeg' alt=''>
+          <img src='./images/32.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+          <img src='./images/z12z.jpeg' alt=''>
+          <img src='./images/z`2.jpeg' alt=''>
+          <img src='./images/c11.jpeg' alt=''>
+          
+        </div>
+  
+        <div aria-hidden="true" class="marquee__group">
+          <img src='./images/gym8.jpeg' alt=''>
+          <img src='./images/32.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+          <img src='./images/gym7.jpeg' alt=''>
+          <img src='./images/z12z.jpeg' alt=''>
+          <img src='./images/z`2.jpeg' alt=''>
+          <img src='./images/c11.jpeg' alt=''>
+        </div>
+      </div>
+    </div> 
+    		</section>
+		<!-- end portfolio section -->
+
+
+    <section id="portfolio">
+      <div class="container-fluid">
+        <div class="row">
+        
+          <div class="sec-title text-center wow animated fadeInDown margin-top ">
+            <h2>Our Features</h2>
+            <p>There are many variations of passages of lorem Ipsum available, but the majority <br> have suffered alteration.</p>
+          </div>
+          
+
+          
+            
+          
+
+
+    <div class="features_area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-12">
+                  <div class="section_title text-center mb-73">
+                   
+                    
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <div class="single_feature text-center mb-73">
+                      <div class="icon">
+                          <img src="images/cd2-removebg-preview.png" alt="">
+                      </div>
+                      <h4>Weightlifting</h4>
+                      <p>There are many variations of passages of lorem Ipsum available.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="single_feature text-center">
+                      <div class="icon">
+                          <img src="images/download__1_-removebg-preview.png" alt="">
+                      </div>
+                      <h4>Specific Muscles</h4>
+                      <p>There are many variations of passages of lorem Ipsum available.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="single_feature text-center">
+                      <div class="icon">
+                          <img src="images/cd4-removebg-preview.png" alt="">
+                      </div>
+                      <h4>Flex Your Muscles</h4>
+                      <p>There are many variations of passages of lorem Ipsum available.</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="single_feature text-center">
+                      <div class="icon">
+                          <img src="images/download-removebg-preview (1).png" alt="">
+                      </div>
+                      <h4>Cardio Exercises</h4>
+                      <p>There are many variations of passages of lorem Ipsum available.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- features_area_end  -->
+  
+</section>
+    
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+      
+        <div class="sec-title text-center wow animated fadeInDown margin-top ">
+          <h2>Story</h2>
+          
+        </div>
+        
+
+        
+          
+        
+
+
+
+
+
+  <section class="about-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-pic">
+                    <img src="images/z`2.jpeg" alt="">
+                    <a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                        <img src="images/play.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h2>gravida nibh</h2>
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                        rhoncus, gravida quam semper libero sit amet.</p>
+                    <a href="about.html" class=" " style="  color: #0088b9;; background-color: white; font-size: 20px; padding: 7px 7px;border-radius: 10px;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+
+
+
+
+    <section class="classtime-section class-time-table spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <div class="section-title">
+                    <section id="portfolio">
+                      <div class="container ">
+                        <div class="row">
+                        
+                          <div class="sec-title text-center wow animated fadeInDown margin-top ">
+                            <h2 class="wow animated bounceInLeft ">Classtime Table</h2>
+                          </div>
+                          
+                
+                          
+                            
+                          
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="timetable-controls ">
+                      <ul>
+                          <li class="" data-tsfilter="all">all class</li>
+                          <li data-tsfilter="crossfit">crossfit</li>
+                          <li data-tsfilter="lunge">lunge ball</li>
+                          <li data-tsfilter="ppsr">ppsr</li>
+                          <li data-tsfilter="walls">walls</li>
+                          <li data-tsfilter="candy">candy</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="classtime-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th></th>
+                          <th>Monday</th>
+                          <th>Tuesday</th>
+                          <th>Wednesday</th>
+                          <th>Thursday</th>
+                          <th>Friday</th>
+                          <th>Saturday</th>
+                          <th>Sunday</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="workout-time">10.00</td>
+                          <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                              <span>10.00 - 14.00</span>
+                              <h6>Crossfit lv1</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                              <span>10.00 - 15.00</span>
+                              <h6>Crossfit lv1</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="lunge">
+                              <span>10.00 - 13.00</span>
+                              <h6>Lunge Ball Bur</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="lunge">
+                              <span>10.00 - 13.30</span>
+                              <h6>Lunge Ball Bur</h6>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="workout-time">14.00</td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="lunge">
+                              <span>14.00 - 17.00</span>
+                              <h6>Lunge Ball Bur</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                              <span>14.00 - 17.00</span>
+                              <h6>Crossfit lv1</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="walls">
+                              <span>14.00 - 15.30</span>
+                              <h6>Walls to Knees</h6>
+                          </td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td class="workout-time">16.00</td>
+                          <td class="hover-bg ts-item" data-tsmeta="lunge">
+                              <span>16.00 - 18.00</span>
+                              <h6>Lunge Ball Bur</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="candy">
+                              <span>16.00 - 19.00</span>
+                              <h6>Candy</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="candy">
+                              <span>16.00 - 19.00</span>
+                              <h6>Candy</h6>
+                          </td>
+                          <td class="hover-bg ts-item" data-tsmeta="ppsr">
+                              <span>16.00 - 17.00</span>
+                              <h6>Ppsr</h6>
+                          </td>
+                          <td class="hover-bg ts-item" data-tsmeta="murph">
+                              <span>16.00 - 20.00</span>
+                              <h6>murph</h6>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="workout-time">18.00</td>
+                          <td class="hover-bg ts-item" data-tsmeta="walls">
+                              <span>18.00 - 20.00</span>
+                              <h6>Walls to Knees</h6>
+                          </td>
+                          <td class="hover-bg ts-item" data-tsmeta="ppsr">
+                              <span>18.00 - 20.00</span>
+                              <h6>ppsr</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="chelsea">
+                              <span>18.00 - 22.00</span>
+                              <h6>Chelsea</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="annie">
+                              <span>18.00 - 22.00</span>
+                              <h6>annie</h6>
+                          </td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td class="workout-time">20.00</td>
+                          <td class="hover-bg ts-item" data-tsmeta="lunge">
+                              <span>21.00 - 23.00</span>
+                              <h6>Lunge Ball Bur</h6>
+                          </td>
+                          <td class="hover-bg ts-item" data-tsmeta="walls">
+                              <span>20.00 - 22.00</span>
+                              <h6>Walls to Knees</h6>
+                          </td>
+                          <td class="hover-bg ts-item" data-tsmeta="walls">
+                              <span>20.30 - 23.00</span>
+                              <h6>Walls to Knees</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                              <span>22.00 - 23.00</span>
+                              <h6>Crossfit Lv2</h6>
+                          </td>
+                          <td></td>
+                          <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                              <span>21.00 - 23.00</span>
+                              <h6>Crossfit Lv2</h6>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </section>
+</section>
+  <!-- Class Time Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+	<br><br><br><b><br></b>
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+						
+						<ul class="social-button">
+							<li class="wow animated zoomIn"><a href="https://www.facebook.com/"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com/login"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+						</ul>
+						<div class="text-center">
+						<br/>
+						<br/>
+												<p> &copy; Design and Developed By human <a href="#"> </a> </p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+		
+		
+		</main>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
